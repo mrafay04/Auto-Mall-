@@ -109,6 +109,7 @@ header.shadow #search-icon{
 
 #menu-icon{
     font-size: 24px;
+    z-index: 10;
     cursor: pointer;
     color: var(--text-color);
     display: none;
@@ -128,6 +129,7 @@ header.shadow #search-icon{
 .navbar{
     display: flex;
     column-gap: 2rem;
+    
     
 }
 
@@ -483,7 +485,7 @@ header.shadow #search-icon{
     #menu-icon {
       display: initial;
     }
-    /* .navbar {
+    .navbar {
       position: absolute;
       top: 100%;
       right: 0;
@@ -509,7 +511,7 @@ header.shadow #search-icon{
     }
     .navbar.active {
       clip-path: circle(144% at 0% 0%);
-    } */
+    }
     
   }
   @media (max-width: 727px) {
@@ -579,51 +581,12 @@ header.shadow #search-icon{
         background-position:  ;
     
     }
-    .navbar a{
-        font-size: 18px;
-        color: white;
-        letter-spacing: 1px;
-        text-decoration: none;
-        font-weight: 500;
-        margin-left: 35px;
-    }
-    .navbar {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        font-size: 25px;
-        height: 100vh;
-        position: absolute;
-        left: 0;
-        background-color: #333;
-    }
-
-    .navbar.show {
-        top: 0px;
-        display: flex;
-        color: rgb(228, 180, 92);
-        border: 3px solid;
-        overflow: hidden;
-        padding: 20px; /* Adjust the padding as needed */
-        animation-name: navbar;
-        animation-timing-function: ease-in-out;
-        animation-duration: 0.6s;
-        background-color: black;
-    }
-
-    .navbar li a {
-        height: 100%;
-        line-height: 0vh;
-        font-size: 34px;
-        font-weight: bolder;
-    }
   }
   
-  @keyframes navbar {
+  /* @keyframes navbar {
     from{
 transform: translateX(100%);
     }to{
         transform: translateX(100%);
 
-    }}
+    }} */

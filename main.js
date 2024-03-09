@@ -37,22 +37,29 @@ window.addEventListener('scroll', () => {
 
 });
 
+let menu=document.querySelector('.navbar');
+
+document.querySelector('#menu-icon').onclick =() =>{
+    menu.classList.toggle('active');
+    search.classList.remove('active');
+}
 
 
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.getElementById('hamburger');
-    const navbar = document.querySelector('.navbar');
 
-    // Toggle the mobile navigation
-    hamburger.addEventListener('click', function () {
-        navbar.classList.toggle('show');
-    });
+// document.addEventListener('DOMContentLoaded', function () {
+//     const hamburger = document.getElementById('hamburger');
+//     const navbar = document.querySelector('.navbar');
 
-    // Close the mobile navigation when a link is clicked
-    const navLinks = document.querySelectorAll('.navbar a');
-    navLinks.forEach(function (link) {
-        link.addEventListener('click', function () {
-            navbar.classList.remove('show');
-        });
-    });
-});
+//     // Toggle the mobile navigation
+//     hamburger.addEventListener('click', function () {
+//         navbar.classList.toggle('show');
+//     });
+
+//     // Close the mobile navigation when a link is clicked
+//     const navLinks = document.querySelectorAll('.navbar a');
+//     navLinks.forEach(function (link) {
+//         link.addEventListener('click', function () {
+//             navbar.classList.remove('show');
+//         });
+//     });
+// });
